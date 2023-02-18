@@ -13,9 +13,9 @@ putchar(n);
 if (n != 57)
 {
 putchar(',');
-putcahr(' ');
+putchar(' ');
 }
 }
-putchar(n'\n');
+putchar('\n');
 return (0);
 }
