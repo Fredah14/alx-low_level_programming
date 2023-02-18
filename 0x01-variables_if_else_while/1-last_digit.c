@@ -1,4 +1,4 @@
-#include <stdblib.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
 *main - Prints the last digit of a random generated number
