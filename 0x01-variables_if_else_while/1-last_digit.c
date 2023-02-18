@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <stdio.h>
+#include <time.h>
 /**
 *main - Prints the last digit of a random generated number
 *
