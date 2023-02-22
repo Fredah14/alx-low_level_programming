@@ -8,9 +8,9 @@
 
 void print_alphabet(void)
 {
-char i;
-for (i = 'a'; i <= 'z'; i++)
-_putchar(i);
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
 _putchar('\n');
 return (0);
 }
