@@ -25,5 +25,6 @@ m = l / 2;
 }
 for (; m < l; m++)
 {_putchar(str[m]);
+}
 _putchar('\n');
 }
