@@ -12,7 +12,7 @@ int a = 0, b = 0;
 char x;
 while (s[b++])
 a++;
-for (b = a - 1; b >= a/ 2; b--)
+for (b = a - 1; b >= a / 2; b--)
 {
 x = s[b];
 s[b] = s[a - b - 1];
