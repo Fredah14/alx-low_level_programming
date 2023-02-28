@@ -32,5 +32,6 @@ break;
 }
 c++;
 ni *= min;
-return (ni);
 }
+return (ni);
+
