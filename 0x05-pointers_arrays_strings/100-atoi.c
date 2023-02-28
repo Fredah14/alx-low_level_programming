@@ -32,4 +32,4 @@ break;
 c++;
 ni *= min;
 return (0);
-
+}
