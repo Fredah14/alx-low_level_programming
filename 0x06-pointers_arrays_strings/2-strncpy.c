@@ -2,43 +2,27 @@
 #include <stdio.h>
 
 /**
- *_strncpy - Copies a string.
- *@dest:Input value
- *@src: Input value
- *@n: Input value
- *Return: Always 0.
+*_strncpy - Copies a string.
+*@dest:Input value
+*@src: Input value
+*@n: Input value
+*@ptr: input value
+*Return: Always 0.
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-char s1[98];
-char *ptr;
-int i;
-
-for (i = 0; i < 98 - 1; i++)
+int j;
+j = 0;
+while (j < n && src[j] != '\0')
 {
-s1[i] = '*';
+dest[j] = src[j];
+j++
 }
-s1[i] = '\0';
-printf("%s\n", s1);
-ptr = _strncpy(s1[i] !=5);
-printf("%s\n", s1);
-printf("%s\n", ptr);
-ptr = _strncpy(s1[98] != 90);
-printf("%s", s1);
-printf("%s", ptr);
-for (i = 0; i < 98; i++)
+while (j < n)
 {
-if (i % 10)
-{
-printf(" ");
+dest[j] ='\0';
+j++;
 }
-if (!(i % 10) && i)
-{
-printf("\n");
-}
-printf("0x%02x", s1[i]);
-}
-printf("\n");
-return (0);
+return (dest);
 }
