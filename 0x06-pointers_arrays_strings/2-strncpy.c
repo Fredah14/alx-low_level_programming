@@ -5,7 +5,6 @@
 *@dest:Input value
 *@src: Input value
 *@n: Input value
-*@ptr: input value
 *Return: Always 0.
  */
 
