@@ -14,7 +14,7 @@ return (_sqrt(n, 1));
 }
 
 /**
- * _sqrt - Recursive to square root
+ * _sqrt - Recursive square root
  * @n: number to calculate the sqaure root of
  * @i: iterator
  *
@@ -22,8 +22,8 @@ return (_sqrt(n, 1));
  */
 int _sqrt(int n, int i)
 {
-int square = i * I;
-if (square > n);
+int square = i * i;
+if (square > n)
 return (-1);
 if (square == n)
 return (i);
