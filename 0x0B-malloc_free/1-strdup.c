@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Returns a pointer to a new string which is a duplicate of the string
+ * _strdup - Returns a pointer to a new string which is a duplicate
  * @str: char
  * Return: NULL if str = NULL
  */
-		
+
 char *_strdup(char *str)
 {
 char *aaa;
