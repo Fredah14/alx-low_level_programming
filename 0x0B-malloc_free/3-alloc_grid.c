@@ -15,7 +15,7 @@ int **ar;
 int i, j;
 if (height <= 0 || width <= 0)
 return (NULL);
-array = (int **) malloc(sizeof(int *) * height);
+ar = (int **) malloc(sizeof(int *) * height);
 if (ar == NULL)
 return (NULL);
 for (i = 0; i < height; i++)
