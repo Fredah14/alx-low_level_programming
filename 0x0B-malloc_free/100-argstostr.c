@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- *argstostr - Concatenates all the arguments of the program.
+ **argstostr - Concatenates all the arguments of the program.
  *@ac: Number or arguments
  *@av: Array of arguments
  *Return: A pointer to a new string, or NULL if it fails
@@ -12,8 +12,6 @@
 char *argstostr(int ac, char **av)
 {
 int i, j, k, len;
-char *str;
-
 char *str;
 		
 if (ac == 0 || av == NULL)
