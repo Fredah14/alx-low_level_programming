@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- **argstostr - Concatenates all the arguments of the program.
- *@ac: Number or arguments
+ *argstostr - Concatenates all the arguments of the program.
+ *@ac: Int
  *@av: Array of arguments
  *Return: A pointer to a new string, or NULL if it fails
  */
