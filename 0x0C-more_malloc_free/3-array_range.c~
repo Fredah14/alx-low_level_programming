@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ *array_range - Creates an array of integers.
+ *
+ *
+ *Return: the pointer to the newly created array
+ *If min > max, return NULL
+ *If malloc fails, return NULL
+ */
+
+int *array_range(int min, int max)
+{
+  
