@@ -18,8 +18,11 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL},
 int i = 0;
-while (ops[i].op != NULL && *(ops[i].op) != *s)
-i++;
-
+while (i < 5)
+{
+if (strcmp(s, ops[i].op) == 0)
 return (ops[i].f);
+i++;
+}
+return (0);
 }
