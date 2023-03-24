@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "3-calc.h"
 
 int op_add(int a, int b);
