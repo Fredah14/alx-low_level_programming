@@ -7,7 +7,7 @@
  * Return: Always 0.
  */
 
-void print_bef(void) __attribute__ ((constructor))
+void __attribute__ ((constructor)) print_bef()
 
 {
 printf("You're beat! and yet, you must allow");
