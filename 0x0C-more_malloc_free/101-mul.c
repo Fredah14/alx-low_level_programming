@@ -10,7 +10,7 @@
  */
 
 int find_len(char *st);
-char *create_aarray(int size);
+char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mul, int digit, int zeroes);
 
@@ -23,7 +23,7 @@ return (len);
 
 /**
  *create_aarray - creates an array of chars & initializes it
- *with the char 'a'.
+ *with the char 'x'.
  *@size: the size of the array to be initialized
  *
  *Description: if insufficient space, the function exits with status of 98
@@ -40,7 +40,7 @@ if (array == NULL)
 exit(98);
 
 for (index = 0; index < (size - 1); index++)
-array[index] = 'a';
+array[index] = 'x';
 array[index] = '\0';
 return (array);
 }
@@ -82,7 +82,7 @@ mult += mult_len;
 
 while (*prod)
 {
-*prod = 'a';
+*prod = 'x';
 prod++;
 }
 prod--;
@@ -91,9 +91,9 @@ while (zeroes--)
 *prod = '0';
 prod--;
 }
-for (; mult_len > = 0; mult_len--, mult--, prod--)
+for (; mult_len >= 0; mult_len--, mult--, prod--)
 {
-*prod = 'a';
+*prod = 'x';
 prod++;
 }
 
@@ -103,7 +103,7 @@ while (zeroes--)
 *prod = '0';
 prod--;
 }
-for (; mult_len > = 0; mult_len--, mult--, prod--)
+for (; mult_len >= 0; mult_len--, mult--, prod--)
 {
 if (*mult < '0' || *mult > '9')
 {
@@ -132,7 +132,7 @@ while (*(final_prod + 1))
 final_prod++;
 while (*(next_prod - 1))
 next_prod++;
-for (; *final_prod != 'a'; final_prod--)
+for (; *final_prod != 'x'; final_prod--)
 {
 num = (*final_prod - '0') + (next_prod - '0');
 num + = tens;
@@ -142,7 +142,7 @@ tens = num / 10;
 next_prod--;
 next_len--;
 }
-for (; next_len >= 0 && *next_prod != 'a'; next_len--)
+for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 {
 num = (*next_prod - '0');
 num + = tens;
@@ -194,7 +194,7 @@ add_nums(final_prod, next_prod, size - 1);
 }
 for (index = 0; final_prod[index]; index++)
 {
-if (final_prod[index] != 'a')
+if (final_prod[index] != 'x')
 putchar(final_prod[index]);
 }
 putchar('\n');
