@@ -15,11 +15,11 @@ listint_t *previouslist = NULL;
 listint_t *nextlist = NULL;
 while ((*head)
 {
-nextlist = (*head)->nextlist;
-(*head)->nextlist = previouslist;
+nextlist = (*head)->next;
+(*head)->next = previouslist;
 previouslist = *head;
 *head = nextlist;
 }
-*head = previouslist;
+*head = previoulist;
 return (*head);
 }
