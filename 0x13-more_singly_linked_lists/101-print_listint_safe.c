@@ -4,12 +4,10 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - prints a listint_t linked list
+ * looped_listint_len - counts number of nodes in listint_t linked list looped
  * @head: a pointer to the head of the listint_t to check
- * Description: can print lists with a loop
  *
- * Return: the number of nodes in the list, and
- * if the function fails, exit the program with status 98
+ * Return: the number of nodes in the list, if not looped return 0
  */
 size_t looped_listint_len(const listint_t *head)
 {
@@ -46,8 +44,10 @@ return (0);
 /**
  * print_listint_safe - prints a listint_t linked list
  * @head: a pointer to the head of the listint_t list
+ * Description: can print lists with a loop
  *
- * Return: the number of nodes in the list
+ * Return: the number of nodes in the list, and
+ * if the function fails, exit the program with status 98
  */
 size_t print_listint_safe(const listint_t *head)
 {
