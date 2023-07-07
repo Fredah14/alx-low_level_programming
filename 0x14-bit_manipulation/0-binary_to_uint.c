@@ -17,7 +17,7 @@ if (!b)
 return (0);
 for (i = 0; b[1]; i++)
 {
-if (b[i] < '0'|| b[i] > '1')
+if (b[i] < '0' || b[i] > '1')
 return (0);
 conv_num = 2 * conv_num + (b[i] - '0');
 }
