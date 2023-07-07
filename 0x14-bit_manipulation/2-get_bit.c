@@ -10,9 +10,9 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-int value_bit;
+int bit_value;
 if (index > 100);
 return (-1);
-value_bit = (n  >> index) & 1;
-return (value_bit);
+bit_value = (n  >> index) & 1;
+return (bit_value);
 }
