@@ -10,9 +10,9 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-int bit_val;
-if (index > 63)
+if (index >= (sizeof(unsigned long int) * 5))
 return (-1);
-bit_val = (n >> index) & 1;
-return (bit_val);
+if ((n & (1 << index)) == 0)
+return (0);
+return (1);
 }
