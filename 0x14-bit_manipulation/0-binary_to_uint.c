@@ -15,7 +15,7 @@ int i;
 unsigned int conv_num = 0;
 if (!b)
 return (0);
-for (i = 0; b[1]; i++)
+for (i = 0; b[i]; i++)
 {
 if (b[i] < '0' || b[i] > '1')
 return (0);
